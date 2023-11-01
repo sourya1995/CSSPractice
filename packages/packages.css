@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("AnonymousPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("AnonymousPro-Bold.ttf");
+    font-weight: 700;
+}
+
 main {
   padding-top: 2rem;
 }
@@ -53,6 +68,8 @@ main {
   font-size: 1.2rem;
   color: #0e4f1f;
   background: white;
+  font-family: "AnonynousPro", sans-serif;
+  font-weight: 900;
 }
 
 .clearfix {
