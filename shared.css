@@ -30,13 +30,16 @@ main {
   left: 0;
   background: #2ddf5c;
   padding: 0.5rem 1rem;
-  z-index: 1;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.main-header > div {
+/* .main-header > div {
   display: inline-block;
   vertical-align: middle;
-}
+} */
 
 .toggle-button {
   width: 3rem;
@@ -65,14 +68,13 @@ main {
   text-decoration: none;
   font-weight: bold;
   /* font-size: 1.5rem; */
-  height: 2.5rem;
+
   /* width: 20px; */
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .main-header__brand img {
-  height: 100%;
+  height: 2.5rem;
+  vertical-align: middle;
   /* width: 100%; */
 }
 
@@ -88,6 +90,7 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .main-nav__item {
@@ -141,12 +144,15 @@ body::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-footer__link {
   /* display: inline-block; */
   /* margin: 0 1rem; */
-  display: block;
+  /* display: block; */
   margin: 1rem 0;
 }
 
@@ -203,9 +209,13 @@ body::-webkit-scrollbar {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
@@ -226,16 +236,21 @@ body::-webkit-scrollbar {
   }
 
   .main-nav {
-    display: inline-block;
+    /* display: inline-block;
     text-align: right;
     width: calc(100% - 44px);
-    vertical-align: middle;
+    vertical-align: middle; */
+    display: flex;
   }
 }
 
 @media (min-width: 40rem) {
   .main-footer__link {
-    display: inline-block;
     margin: 0 1rem;
+  }
+
+  .main-footer__links {
+    flex-direction: row;
+    justify-content: center;
   }
 }
