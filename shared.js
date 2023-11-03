@@ -4,6 +4,7 @@ var modalNoButton = document.querySelector(".modal__action--negative");
 var selectPlanButtons = document.querySelectorAll(".plan button");
 var toggleButton = document.querySelector(".toggle-button");
 var mobileNav = document.querySelector(".mobile-nav");
+var ctaButton = document.querySelector(".maib-nav__item--cta");
 
 // backdrop.style.display = 'block';
 
@@ -49,4 +50,13 @@ function closeModal() {
 toggleButton.addEventListener("click", function () {
   mobileNav.classList.add('open');
   backdrop.classList.add('open');
+});
+
+ctaButton.addEventListener("animationstart", function (event) {
+});
+
+ctaButton.addEventListener("animationend", function (event) {
+});
+
+ctaButton.addEventListener("animationiteration", function (event) {
 });
