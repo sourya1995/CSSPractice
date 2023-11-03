@@ -13,29 +13,37 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
     // backdrop.style.display = "block";
     // modal.className = 'open';
     modal.classList.add("open");
-    backdrop.classList.add("open");
+    backdrop.style.display = "block";
+    setTimeout(function () {
+      backdrop.classList.add("open");
+    }, 10);
+
   });
 }
 
 backdrop.addEventListener("click", function () {
-//   mobileNav.style.display = "none";
+  //   mobileNav.style.display = "none";
   mobileNav.classList.remove("open");
   this.closeModal();
 });
 modalNoButton.addEventListener("click", closeModal);
 
-if(modalNoButton){
-    modalNoButton.addEventListener("click", closeModal);
+if (modalNoButton) {
+  modalNoButton.addEventListener("click", closeModal);
 }
 
 function closeModal() {
   //   backdrop.style.display = "none";
   //   modalNoButton.style.display = "none";
-  if(modal){
-     modal.classList.remove("open");
+  if (modal) {
+    modal.classList.remove("open");
   }
- 
   backdrop.classList.remove("open");
+  setTimeout(function () {
+
+    backdrop.style.display = "none";
+  }, 200);
+
 }
 
 toggleButton.addEventListener("click", function () {
