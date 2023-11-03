@@ -1,3 +1,8 @@
+:root {
+  --dark-green: #0e4f1f;
+  --highlight-color: #ff1b68;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -190,7 +195,7 @@ body::-webkit-scrollbar {
 }
 
 .button {
-  background: #0e4f1f;
+  background: var(--dark-green,  #0e4f1f);
   color: white;
   font: inherit;
   border: 1.5px solid #0e4f1f;
